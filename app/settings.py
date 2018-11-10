@@ -83,8 +83,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ccau_django_db',
-        'USER': 'root',
-        'PASSWORD': '123',
+        'USER': 'django',
+        'PASSWORD': 'django-user-password',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
     }
