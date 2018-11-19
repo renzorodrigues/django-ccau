@@ -13,18 +13,15 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Endereco',
+            name='Turma',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('logradouro', models.CharField(max_length=200, verbose_name='Logradouro')),
-                ('numero', models.CharField(max_length=10, verbose_name='Número')),
-                ('bairro', models.CharField(max_length=50, verbose_name='Bairro')),
-                ('cep', models.CharField(blank=True, max_length=9, verbose_name='CEP')),
-                ('cidade', models.CharField(max_length=50, verbose_name='Cidade')),
+                ('descricao', models.CharField(max_length=100, verbose_name='Descrição')),
+                ('periodo', models.CharField(choices=[('M', 'Manhã'), ('T', 'Tarde')], max_length=1, null=True, verbose_name='Período')),
             ],
             options={
-                'verbose_name': 'Endereço',
-                'verbose_name_plural': 'Endereços',
+                'verbose_name': 'Turma',
+                'verbose_name_plural': 'Turmas',
             },
             managers=[
                 ('object', django.db.models.manager.Manager()),

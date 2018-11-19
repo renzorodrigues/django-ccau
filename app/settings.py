@@ -38,11 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'rest_framework_swagger',
     'unidade',
     'endereco',
     'usuario',
     'avaliacao',
     'telefone',
+    'turma',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +89,7 @@ DATABASES = {
         'PASSWORD': 'django-user-password',
         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
         'PORT': '3306',
+
     }
 }
 

@@ -1,7 +1,6 @@
 from django.db import models
-from django.utils import timezone
-
 from endereco.models import Endereco
+from turma.models import Turma
 
 
 class Usuario(models.Model):
@@ -23,10 +22,14 @@ class Atendido(Usuario):
         Endereco,
         on_delete=models.CASCADE,
         null=True
+    ),
+    turma = models.ForeignKey(
+        Turma,
+        on_delete=models.CASCADE,
+        null=True
     )
     responsaveis = models.ManyToManyField(
-        "Responsavel",
-        verbose_name="Responsáveis"
+        "Responsavel"
     )
 
     object = models.Manager()
