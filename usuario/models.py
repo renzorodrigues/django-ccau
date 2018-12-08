@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import datetime
 from endereco.models import Endereco
 from turma.models import Turma
 
@@ -15,7 +16,12 @@ class Usuario(models.Model):
 
 
 class Atendido(Usuario):
+    SEXO = (
+        ("M", "Masculino"),
+        ("F", "Feminino")
+    )
     matricula = models.CharField("Matrícula", max_length=10, unique=True)
+    sexo = models.CharField("Sexo", max_length=2, choices=SEXO, null=True)
     data_nascimento = models.DateField("Data de Nascimento")
     data_matricula = models.DateField("Data de Matrícula", blank=True, null=True)
     endereco = models.ForeignKey(

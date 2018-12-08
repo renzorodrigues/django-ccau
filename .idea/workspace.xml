@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04c45a2b-500b-40c2-8ec6-7ab96f685708" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/turma/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/turma/api/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/turma/api/viewsets.py" afterDir="false" />
+    <list default="true" id="04c45a2b-500b-40c2-8ec6-7ab96f685708" name="Default Changelist" comment="Código corrigido">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avaliacao/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacao/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/avaliacao/api/viewsets.py" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacao/api/viewsets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/avaliacao/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/endereco/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/avaliacao/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/avaliacao/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/endereco/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/endereco/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/telefone/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unidade/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/unidade/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turma/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/turma/api/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turma/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turma/migrations/0002_turma_unidade.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/turma/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/turma/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unidade/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/unidade/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/unidade/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario/api/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/api/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario/migrations/0002_atendido_responsaveis.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/usuario/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/usuario/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,62 +32,75 @@
     <session id="-418244322">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.22" value="2" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="67" />
+          <entry key="py" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="67" />
+          <entry key="Python" value="127" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2217" />
+          <entry key="py" value="4031" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2217" />
+          <entry key="PLAIN_TEXT" value="18" />
+          <entry key="Python" value="4031" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/turma/models.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unidade/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1542586796876" expanded="true" signature="92:605" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/usuario/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+            <state relative-caret-position="150">
+              <caret line="22" column="73" lean-forward="true" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/turma/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <marker date="1544233117503" expanded="true" signature="57:488" ph="..." />
               </folding>
             </state>
           </provider>
@@ -97,28 +114,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/avaliacao/api/serializers.py" />
-        <option value="$PROJECT_DIR$/app/urls.py" />
         <option value="$PROJECT_DIR$/periodo/api/__init__.py" />
         <option value="$PROJECT_DIR$/periodo/admin.py" />
         <option value="$PROJECT_DIR$/periodo/models.py" />
-        <option value="$PROJECT_DIR$/usuario/api/serializers.py" />
         <option value="$PROJECT_DIR$/unidade/api/serializers.py" />
-        <option value="$PROJECT_DIR$/unidade/models.py" />
-        <option value="$PROJECT_DIR$/turma/api/serializers.py" />
         <option value="$PROJECT_DIR$/turma/api/viewsets.py" />
         <option value="$PROJECT_DIR$/turma/admin.py" />
+        <option value="$PROJECT_DIR$/app/urls.py" />
+        <option value="$PROJECT_DIR$/turma/api/serializers.py" />
+        <option value="$PROJECT_DIR$/usuario/api/serializers.py" />
         <option value="$PROJECT_DIR$/app/settings.py" />
-        <option value="$PROJECT_DIR$/usuario/models.py" />
+        <option value="$PROJECT_DIR$/avaliacao/api/viewsets.py" />
+        <option value="$PROJECT_DIR$/endereco/models.py" />
+        <option value="$PROJECT_DIR$/avaliacao/api/serializers.py" />
+        <option value="$PROJECT_DIR$/avaliacao/models.py" />
         <option value="$PROJECT_DIR$/turma/models.py" />
+        <option value="$PROJECT_DIR$/unidade/models.py" />
+        <option value="$PROJECT_DIR$/usuario/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1741" />
-    <option name="y" value="319" />
-    <option name="width" value="1338" />
-    <option name="height" value="699" />
+    <option name="x" value="1919" />
+    <option name="y" value="286" />
+    <option name="width" value="1368" />
+    <option name="height" value="742" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -139,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,10 +166,16 @@
               <item name="django-ccau" type="b2602c69:ProjectViewProjectNode" />
               <item name="django-ccau" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="django-ccau" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-ccau" type="462c0819:PsiDirectoryNode" />
+              <item name="usuario" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,6 +289,14 @@
       <option name="presentableId" value="Default" />
       <updated>1541868388516</updated>
     </task>
+    <task id="LOCAL-00001" summary="Código corrigido">
+      <created>1542586935966</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542586935966</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -284,14 +317,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32847896" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4973939" visible="true" weight="0.32686085" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39967638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32847896" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996215" weight="0.32686085" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003785" side_tool="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4988831" weight="0.32686085" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5026061" side_tool="true" weight="0.32686085" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32847896" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -301,18 +334,26 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Código corrigido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Código corrigido" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="352" selection-start-line="352" selection-end-line="352" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="203" selection-start-line="203" selection-end-line="203" />
         </state>
       </provider>
     </entry>
@@ -357,37 +398,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/endereco/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/admin.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/periodo/api/__init__.py" />
     <entry file="file://$PROJECT_DIR$/periodo/__init__.py" />
     <entry file="file://$PROJECT_DIR$/periodo/admin.py" />
-    <entry file="file://$PROJECT_DIR$/turma/api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/periodo/models.py" />
     <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/importlib/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="125" selection-start-line="125" selection-end-line="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unidade/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -398,6 +419,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/unidade/api/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/unidade/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -405,13 +429,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unidade/api/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/usuario/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+        <state relative-caret-position="375">
+          <caret line="25" column="31" lean-forward="true" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -422,45 +443,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/avaliacao/models.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/rest_framework/schemas/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="12" />
+        <state relative-caret-position="279">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/django/contrib/admin/sites.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="523" column="6" selection-start-line="523" selection-start-column="6" selection-end-line="523" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/rest_framework/routers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avaliacao/migrations/0002_avaliacao_avaliador.py" />
+    <entry file="file://$PROJECT_DIR$/app/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="118" column="22" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="30" lean-forward="true" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/rest_framework/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="621" selection-start-line="621" selection-end-line="621" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/avaliacao/views.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/turma/api/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/turma/api/serializers.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/turma/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="316" selection-start-line="316" selection-end-line="316" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/rest_framework/generics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/django/db/models/manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/endereco/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/avaliacao/api/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="47" />
+        <state relative-caret-position="180">
+          <caret line="12" column="77" lean-forward="true" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/turma/api/viewsets.py">
+    <entry file="file://$PROJECT_DIR$/avaliacao/api/viewsets.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="105">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/turma/api/serializers.py">
+    <entry file="file://$PROJECT_DIR$/avaliacao/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="298">
+          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/settings.py">
+    <entry file="file://$USER_HOME$/.virtualenvs/venv/lib/python3.6/site-packages/MySQLdb/connections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="86" column="33" lean-forward="true" selection-start-line="86" selection-start-column="33" selection-end-line="86" selection-end-column="33" />
+        <state relative-caret-position="120">
+          <caret line="275" selection-start-line="275" selection-end-line="275" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/usuario/models.py">
+    <entry file="file://$PROJECT_DIR$/unidade/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -469,12 +570,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/turma/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        <state relative-caret-position="135">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1542586796876" expanded="true" signature="92:605" ph="..." />
+            <marker date="1544233117503" expanded="true" signature="57:488" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="73" lean-forward="true" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
         </state>
       </provider>
     </entry>

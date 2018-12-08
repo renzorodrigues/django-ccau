@@ -1,13 +1,15 @@
 from rest_framework import serializers
-from rest_framework.fields import DateTimeField
-
 from avaliacao.models import Avaliacao
+from usuario.api.serializers import AtendidoSerializer, AvaliadorSerializer
 
 
 class AvaliacaoSerializer(serializers.ModelSerializer):
+
+    atendido = AtendidoSerializer()
+    avaliador = AvaliadorSerializer()
+
     class Meta:
         model = Avaliacao
-        fields = '__all__'
-        depth = 1
+        fields = ('id','demanda','queixa','descricao','atendido','avaliador')
 
 

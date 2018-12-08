@@ -1,5 +1,4 @@
 from django.db import models
-from unidade.models import Unidade
 
 
 class Turma(models.Model):
@@ -7,13 +6,9 @@ class Turma(models.Model):
     PERIODO_CHOICES = (
         ("M", "Manhã"),
         ("T", "Tarde"),
+        ("I", "Integral")
     )
     periodo = models.CharField("Período", max_length=1, null=True, choices=PERIODO_CHOICES)
-    unidade = models.ForeignKey(
-        Unidade,
-        on_delete=models.CASCADE,
-        null=True
-    )
 
     object = models.Manager()
 

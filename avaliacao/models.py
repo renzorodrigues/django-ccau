@@ -1,5 +1,6 @@
 from django.db import models
-from django.utils import timezone 
+from django.utils import timezone
+from usuario.models import Avaliador
 
 from usuario.models import Atendido
 
@@ -14,12 +15,20 @@ class Avaliacao(models.Model):
     queixa = models.CharField("Queixa", max_length=100)
     descricao = models.TextField("Descrição")
     data_criacao = models.DateTimeField("Data de Criação", auto_now=timezone.now())
-    atendido = models.ForeignKey(Atendido, on_delete=models.CASCADE)
+    atendido = models.ForeignKey(
+        Atendido,
+        on_delete=models.CASCADE
+    )
+    avaliador = models.ForeignKey(
+        Avaliador,
+        on_delete=models.CASCADE,
+        null=True
+    )
     
     object = models.Manager()
     
     def __str__(self):
-        return self.descricao
+        return self.queixa
     
     class Meta:
         verbose_name = "Avaliação"

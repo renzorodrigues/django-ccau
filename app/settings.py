@@ -116,14 +116,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
 TIME_ZONE = 'America/Sao_Paulo'
 
 # dd/mm/yyyy and dd/mm/yy date & datetime input field settings
-DATE_INPUT_FORMATS = ('%d/%m/%Y', '%d-%m-%Y', '%d/%m/%y', '%d %b %Y',
-                      '%d %b, %Y', '%d %b %Y', '%d %b, %Y', '%d %B, %Y',
-                      '%d %B %Y')
+DATE_INPUT_FORMATS = ('%d/%m/%Y', '%d-%m-%Y', '%d/%m/%y', '%d %b %Y', '%d %b, %Y',
+                      '%d %b %Y', '%d %b, %Y', '%d %B, %Y', '%d %B %Y')
+
 DATETIME_INPUT_FORMATS = ('%d/%m/%Y %H:%M:%S', '%d/%m/%Y %H:%M', '%d/%m/%Y',
                           '%d/%m/%y %H:%M:%S', '%d/%m/%y %H:%M', '%d/%m/%y',
                           '%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M', '%Y-%m-%d')

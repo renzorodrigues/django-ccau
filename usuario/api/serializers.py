@@ -11,14 +11,24 @@ class ResponsavelSerializer(serializers.ModelSerializer):
 
 
 class AtendidoSerializer(serializers.ModelSerializer):
-
-    data_nascimento = DateField(format="%d/%m/%Y", input_formats=['%d/%m/%Y', 'iso-8601'])
-    data_matricula = DateField(format="%d/%m/%Y", input_formats=['%d/%m/%Y', 'iso-8601'])
-
     class Meta:
         model = Atendido
         fields = '__all__'
-        depth = 2
+        depth = 0
+
+
+class AtendidoWriteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Atendido
+        fields = '__all__'
+
+
+def get_serializer_class(self):
+    method = self.request.method
+    if method == 'PUT' or method == 'POST':
+        return AtendidoWriteSerializer
+    else:
+        return AtendidoSerializer
 
 
 class AvaliadorSerializer(serializers.ModelSerializer):

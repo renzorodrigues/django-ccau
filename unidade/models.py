@@ -1,16 +1,12 @@
 from django.db import models
+from turma.models import Turma
 
 
 class Unidade(models.Model):
-    TIPOS_UNIDADES = (
-        ("CN", "CANAÃ"),
-        ("SP", "SHOPPING PARK"),
-        ("JG", "JARAGUÁ"),
-        ("PN", "PLANALTO"),
-        ("PQ", "PEQUIS"),
-    )
-    unidade = models.CharField("Unidade", max_length=2, choices=TIPOS_UNIDADES)
     descricao = models.CharField("Descrição", max_length=100)
+    turmas = models.ManyToManyField(
+        Turma
+    )
 
     object = models.Manager()
 

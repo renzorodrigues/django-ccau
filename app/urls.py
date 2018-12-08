@@ -24,7 +24,6 @@ from usuario.api.viewsets import ResponsavelViewSet
 from unidade.api.viewsets import UnidadeViewSet
 from avaliacao.api.viewsets import AvaliacaoViewSet
 from turma.api.viewsets import TurmaViewSet
-# from turma.api.viewsets import PeriodoViewSet
 
 router = routers.DefaultRouter()
 router.register(r'atendidos', AtendidoViewSet)
@@ -33,7 +32,6 @@ router.register(r'responsaveis', ResponsavelViewSet)
 router.register(r'unidades', UnidadeViewSet)
 router.register(r'avaliacoes', AvaliacaoViewSet)
 router.register(r'turmas', TurmaViewSet)
-# router.register(r'periodos', PeriodoViewSet)
 
 schema_view = get_schema_view(title='Users API', renderer_classes=[OpenAPIRenderer, SwaggerUIRenderer])
 
