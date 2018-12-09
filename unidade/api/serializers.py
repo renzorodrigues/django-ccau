@@ -6,7 +6,7 @@ class UnidadeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Unidade
         fields = '__all__'
-        depth = 2
+        depth = 1
 
 
 

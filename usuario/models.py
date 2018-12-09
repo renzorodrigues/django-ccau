@@ -21,7 +21,7 @@ class Atendido(Usuario):
         ("F", "Feminino")
     )
     matricula = models.CharField("Matrícula", max_length=10, unique=True)
-    sexo = models.CharField("Sexo", max_length=2, choices=SEXO, null=True)
+    sexo = models.CharField("Sexo", max_length=2, choices=SEXO)
     data_nascimento = models.DateField("Data de Nascimento")
     data_matricula = models.DateField("Data de Matrícula", blank=True, null=True)
     endereco = models.ForeignKey(
@@ -67,7 +67,7 @@ class Responsavel(Usuario):
         ("MA", "Mãe"),
         ("RL", "Responsável Legal"),
     )
-    tipo = models.CharField("Tipos Responsável", max_length=2, choices=TIPOS)
+    tipo_responsavel = models.CharField("Tipo do Responsável", max_length=2, choices=TIPOS, null=True)
 
     object = models.Manager()
     

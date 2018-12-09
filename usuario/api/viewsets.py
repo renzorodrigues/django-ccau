@@ -1,11 +1,18 @@
 from rest_framework import viewsets
 from usuario.models import Atendido, Avaliador, Responsavel
-from .serializers import AtendidoSerializer, AvaliadorSerializer, ResponsavelSerializer
+from .serializers import AtendidoSerializer, AvaliadorSerializer, ResponsavelSerializer, AtendidoWriteSerializer, \
+    ResponsavelWriteSerializer
 
 
 class AtendidoViewSet(viewsets.ModelViewSet):
     queryset = Atendido.object.all()
-    serializer_class = AtendidoSerializer
+
+    def get_serializer_class(self):
+        method = self.request.method
+        if method == 'PUT' or method == 'POST':
+            return AtendidoWriteSerializer
+        else:
+            return AtendidoSerializer
 
 
 class AvaliadorViewSet(viewsets.ModelViewSet):
@@ -15,4 +22,10 @@ class AvaliadorViewSet(viewsets.ModelViewSet):
 
 class ResponsavelViewSet(viewsets.ModelViewSet):
     queryset = Responsavel.object.all()
-    serializer_class = ResponsavelSerializer
+
+    def get_serializer_class(self):
+        method = self.request.method
+        if method == 'PUT' or method == 'POST':
+            return ResponsavelWriteSerializer
+        else:
+            return ResponsavelSerializer

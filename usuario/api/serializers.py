@@ -1,5 +1,4 @@
 from rest_framework import serializers
-from rest_framework.fields import DateField
 from usuario.models import Atendido, Avaliador, Responsavel
 
 
@@ -10,25 +9,27 @@ class ResponsavelSerializer(serializers.ModelSerializer):
         depth = 1
 
 
-class AtendidoSerializer(serializers.ModelSerializer):
+class ResponsavelWriteSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Atendido
+        model = Responsavel
         fields = '__all__'
         depth = 0
 
 
-class AtendidoWriteSerializer(serializers.ModelSerializer):
+class AtendidoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Atendido
         fields = '__all__'
+        depth = 1
 
 
-def get_serializer_class(self):
-    method = self.request.method
-    if method == 'PUT' or method == 'POST':
-        return AtendidoWriteSerializer
-    else:
-        return AtendidoSerializer
+class AtendidoWriteSerializer(serializers.ModelSerializer):
+    responsaveis_pk = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
+
+    class Meta:
+        model = Atendido
+        fields = '__all__'
+        depth = 0
 
 
 class AvaliadorSerializer(serializers.ModelSerializer):
@@ -36,5 +37,3 @@ class AvaliadorSerializer(serializers.ModelSerializer):
         model = Avaliador
         fields = '__all__'
         depth = 1
-
-
