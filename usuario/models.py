@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 from endereco.models import Endereco
 from turma.models import Turma
 
@@ -68,6 +67,7 @@ class Responsavel(Usuario):
         ("RL", "Responsável Legal"),
     )
     tipo_responsavel = models.CharField("Tipo do Responsável", max_length=2, choices=TIPOS, null=True)
+    parentesco = models.CharField("Parentesco do Responsável Legal", max_length=50, null=True, blank=True)
 
     object = models.Manager()
     

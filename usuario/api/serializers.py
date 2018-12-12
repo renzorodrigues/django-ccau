@@ -24,8 +24,6 @@ class AtendidoSerializer(serializers.ModelSerializer):
 
 
 class AtendidoWriteSerializer(serializers.ModelSerializer):
-    responsaveis_pk = serializers.PrimaryKeyRelatedField(many=True, read_only=True)
-
     class Meta:
         model = Atendido
         fields = '__all__'
